@@ -1,0 +1,17 @@
+
+DIA 1
+backend
+install npm
+install chocolatey
+npm install express
+npm install nodemon -D
+npm install knex
+npm install pg
+npx knex init
+    knexfile.js
+npx knex migrate:make create_ongs
+npx knex migrate:latest
+
+frontend
+npx creat-react-app <nome>
+
