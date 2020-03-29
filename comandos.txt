@@ -1,6 +1,6 @@
 
 DIA 1
-backend
+BACKEND
 install npm
 install chocolatey
 npm install express
@@ -13,9 +13,24 @@ npx knex migrate:make create_ongs
 npx knex migrate:latest
 
 npm install cors
-
-frontend
+------------------------------------------------------
+FRONTEND
 npx creat-react-app <nome>
 
 npm install react-icons
 npm install react-router-dom
+npm install axios
+
+------------------------------------------------------
+MOBILE
+expo init mobile
+yarn start
+
+ - https://docs.expo.io/ Routing and navigation
+npm install @react-navigation/native
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+npm install @react-navigation/stack
+expo install expo-constants
+expo install expo-mail-composer
+
+

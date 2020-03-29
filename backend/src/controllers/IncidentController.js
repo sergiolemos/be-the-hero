@@ -11,6 +11,7 @@ module.exports = {
     const incidents = await connection('incidents')
       .innerJoin('ongs', 'ongs.id', '=', 'incidents.ong_id')
       .limit(5)
+      .orderBy('id')
       .offset((page - 1) * 5)
       .options({ nestTables: false })
       .select(['incidents.*', 'ongs.name', 'ongs.email', 'ongs.whatsapp', 'ongs.city', 'ongs.uf']);
