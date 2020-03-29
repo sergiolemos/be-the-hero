@@ -12,6 +12,10 @@ npx knex init
 npx knex migrate:make create_ongs
 npx knex migrate:latest
 
+npm install cors
+
 frontend
 npx creat-react-app <nome>
 
+npm install react-icons
+npm install react-router-dom
